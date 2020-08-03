@@ -1,5 +1,90 @@
 body {
-  padding:0;
-  margin:0;
-  font-family:Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  background-color: #EFF6FF;
+  color: #2A4A5C;
+}
+
+.create-account-box {
+  position: relative;
+  width: 80%;
+  margin:5% auto;
+  vertical-align: middle;
+  background: #3557C3 url(img/bg.jpg) 0 0 no-repeat;
+  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.logo {
+  position: absolute;
+  z-index: 10;
+  left: 3rem;
+  top: 3rem;
+  width: 123px;
+  height: 26px;
+  overflow: hidden;
+  text-indent: -900px;
+  background: transparent url(img/logo.svg) 0 0 no-repeat;
+  background-size: cover
+}
+
+.create-account {
+  background-color: #FFFFFF;
+  margin-left: 50%;
+  padding: 3rem 2rem;
+}
+
+.create-account button {
+  width: 40%;
+  padding: .8rem 0;
+  margin: 3rem 0;
+  border: none;
+  background-color: #3698FB;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.create-account button:hover, .create-account button:focus {
+  background-color: #36A8FF;
+}
+.create-account button:active {
+  background-color: #3658EB;
+
+}
+.user-reg li {
+  list-style: none;
+  float: left;
+  width: 45%
+}
+.user-reg ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.user-type a {
+  color: #3698FB;
+}
+
+.typeofinv label {
+  vertical-align: middle;
+}
+
+.typeofinv label::after {
+  content: "i";
+  display: inline-block;
+  border: 1px solid #AFAFAF;
+  border-radius: 50%;
+  color: #AFAFAF;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  font-size: .75em;
+  line-height: 1;
+  margin-left: .5em;
+  margin-right: 1em
 }
