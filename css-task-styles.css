@@ -6,85 +6,212 @@ body {
   color: #2A4A5C;
 }
 
+h1 {
+  font-size: 1.75rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h1, h2 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
 .create-account-box {
   position: relative;
   width: 80%;
   margin:5% auto;
   vertical-align: middle;
   background: #3557C3 url(img/bg.jpg) 0 0 no-repeat;
+  background-size: content;
   -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.logo {
-  position: absolute;
-  z-index: 10;
-  left: 3rem;
-  top: 3rem;
-  width: 123px;
-  height: 26px;
-  overflow: hidden;
-  text-indent: -900px;
-  background: transparent url(img/logo.svg) 0 0 no-repeat;
-  background-size: cover
-}
+  .create-account-box p {
+    color: #7B8A92
+  }
 
-.create-account {
-  background-color: #FFFFFF;
-  margin-left: 50%;
-  padding: 3rem 2rem;
-}
+  .logo {
+    position: absolute;
+    z-index: 10;
+    left: 3rem;
+    top: 3rem;
+    width: 123px;
+    height: 26px;
+    overflow: hidden;
+    text-indent: -900px;
+    background: transparent url(img/logo.svg) 0 0 no-repeat;
+    background-size: cover
+  }
 
-.create-account button {
-  width: 40%;
-  padding: .8rem 0;
-  margin: 3rem 0;
-  border: none;
-  background-color: #3698FB;
-  color: #FFFFFF;
-  text-align: center;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-}
-.create-account button:hover, .create-account button:focus {
-  background-color: #36A8FF;
-}
-.create-account button:active {
-  background-color: #3658EB;
+  .create-account {
+    background-color: #FFFFFF;
+    margin-left: 50%;
+    padding: 5rem 4rem;
+  }
 
-}
-.user-reg li {
-  list-style: none;
-  float: left;
-  width: 45%
-}
-.user-reg ul::after {
-  content: '';
-  display: block;
-  clear: both;
-}
+    .create-account button {
+      width: 40%;
+      padding: .8rem 0;
+      margin: 3rem 0;
+      border: none;
+      background-color: #3698FB;
+      color: #FFFFFF;
+      text-align: center;
+      font-weight: 700;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: none;
+    }
+    .create-account button:hover, .create-account button:focus {
+      background-color: #36A8FF;
+    }
+    .create-account button:active {
+      background-color: #3658EB;
+    }
 
-.user-type a {
-  color: #3698FB;
-}
+    .user-reg {
+      margin-bottom: 3rem;
+      width: 80%;
+    }
 
-.typeofinv label {
-  vertical-align: middle;
-}
+      .user-reg ul {
+        padding-left: 0
+      }
+      .user-reg ul::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .user-reg li {
+        list-style: none;
+        float: left;
+        width: 45%;
+        margin-right: 4%;
+      }
+      .user-reg li.right {
+        margin-right: 0;
+        margin-left: 4%;
+      }
+      .reg-with {
+        margin: 2em 0
+      }
+        .reg-with a {
+          text-decoration: none;
+          display: block;
+          padding: .75em 3em .75em 1em;
+          color: #FFFFFF;
+          font-size: .8rem;
+        }
+        .reg-with-facebook {
+          background-color: #255A9B
+        }
+        .reg-with-linkedin {
+          background-color: #0076B6
+        }
+        .reg-with a::before {
+          content: '';
+          display: inline-block;
+          background-size: 1.25em 1.25em;
+          width: 2em;
+          height: 1.25em;
+        }
+        .reg-with-facebook::before {
+          background: url(img/facebook.svg) 0 0 no-repeat
+        }
+        .reg-with-linkedin::before {
+          background: url(img/linkedin.svg) 0 0 no-repeat
+        }
 
-.typeofinv label::after {
-  content: "i";
-  display: inline-block;
-  border: 1px solid #AFAFAF;
-  border-radius: 50%;
-  color: #AFAFAF;
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  font-size: .75em;
-  line-height: 1;
-  margin-left: .5em;
-  margin-right: 1em
-}
+    .reg-or {
+      text-align: center;
+      width: 60%;
+      margin: 1rem auto;
+      position: relative;
+      border-top: 1px solid #EEEEEE
+    }
+      .reg-or span {
+        position: relative;
+        font-size: .75rem;
+        top: -.75rem;
+        text-transform: uppercase;
+        padding: .5rem 1rem;
+        background-color: #FFFFFF;
+        color: #2A4A5C;
+      }
+
+    .reg-user input {
+      border: none;
+      display: block;
+      width: 95%;
+      height: 3rem;
+      padding-top: .25rem;
+      text-indent: .3rem;
+      border: 1px solid #EEEEEE;
+      outline: none;
+      color: #000;
+    }
+    .reg-user input:focus,
+    .reg-user input:active {
+      border-left-color: #3698FB
+    }
+    .reg-user li {
+      position:relative;
+      /*height: 2rem;*/
+      /*padding: 1rem 1rem 0 .5rem;*/
+
+    }
+    .reg-user label {
+      position: absolute;
+      z-index: 5;
+      left: .5rem;
+      top: .1rem;
+      width: 10rem;
+      height: 1rem;
+      color: #96A5B1;
+      font-size: .8rem;
+    }
+
+    .user-type {
+      font-size: .8rem;
+    }
+      .user-type a {
+        color: #3698FB;
+      }
+
+    .typeofinv {
+      border: none;
+      padding-left: 0;
+      margin: 2rem auto 1.5rem 0;
+    }
+
+      .typeofinv input {
+        margin-right: .5rem;
+      }
+      .typeofinv label {
+        vertical-align: middle;
+        font-size: .9rem;
+      }
+      .typeofinv label::after {
+        content: "i";
+        display: inline-block;
+        border: 1px solid #AFAFAF;
+        border-radius: 50%;
+        color: #AFAFAF;
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        vertical-align: baseline;
+        font-size: .5rem;
+        line-height: 1;
+        margin-left: .5em;
+        margin-right: 1em
+      }
+      .typeofinv-legend {
+        width: 50%;
+        padding: .75rem;
+        color: #AFAFAF;
+        font-size: 1em;
+        box-shadow: 0 0 .2rem .3rem rgba(0, 0, 0, 0.05)
+      }
