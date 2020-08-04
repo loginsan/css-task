@@ -19,13 +19,13 @@ h1, h2 {
 
 .create-account-box {
   position: relative;
-  width: 80%;
-  margin:5% auto;
+  width: 64%;
+  margin:10% auto;
   vertical-align: middle;
   background: #3557C3 url(img/bg.jpg) 0 0 no-repeat;
   background-size: content;
-  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.02);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.02);
 }
 
   .create-account-box p {
@@ -73,7 +73,7 @@ h1, h2 {
 
     .user-reg {
       margin-bottom: 3rem;
-      width: 80%;
+      width: 90%;
     }
 
       .user-reg ul {
@@ -95,15 +95,16 @@ h1, h2 {
         margin-left: 4%;
       }
       .reg-with {
-        margin: 2em 0
+        margin: 2em 0 2.5rem
       }
         .reg-with a {
           text-decoration: none;
           display: block;
-          padding: .75em 3em .75em 1em;
+          padding: .75em 1em;
           color: #FFFFFF;
           font-size: .8rem;
         }
+        .reg-with a:hover, .reg-with a:active, .reg-with a:focus {opacity:.8}
         .reg-with-facebook {
           background-color: #255A9B
         }
@@ -142,12 +143,12 @@ h1, h2 {
       }
 
     .reg-user input {
-      border: none;
       display: block;
       width: 95%;
-      height: 3rem;
-      padding-top: .25rem;
-      text-indent: .3rem;
+      height: 1rem;
+      padding-top: 1.5rem;
+      padding-bottom: .5rem;
+      padding-left: .5rem;
       border: 1px solid #EEEEEE;
       outline: none;
       color: #000;
@@ -158,19 +159,16 @@ h1, h2 {
     }
     .reg-user li {
       position:relative;
-      /*height: 2rem;*/
-      /*padding: 1rem 1rem 0 .5rem;*/
-
     }
     .reg-user label {
       position: absolute;
       z-index: 5;
-      left: .5rem;
-      top: .1rem;
+      left: 0; padding-left: .5rem;
+      top: .3rem;
       width: 10rem;
       height: 1rem;
       color: #96A5B1;
-      font-size: .8rem;
+      font-size: .7rem;
     }
 
     .user-type {
@@ -187,11 +185,28 @@ h1, h2 {
     }
 
       .typeofinv input {
-        margin-right: .5rem;
+        margin-right: .6rem;
+        outline: none;
+      	width: .8rem; height: 0;
       }
+        .typeofinv input::before {
+          content: "";
+          position: relative;
+          display: inline-block;
+          top: -.8rem;
+          border: 5px solid #EEEEEE;
+          width: .4rem;
+          height: .4rem;
+          border-radius: 50%;
+
+        }
+        .typeofinv input:focus::before, .typeofinv input:active::before, .typeofinv input:checked::before {
+          border-color: #3698FB
+        }
       .typeofinv label {
         vertical-align: middle;
         font-size: .9rem;
+        margin-right: .5rem;
       }
       .typeofinv label::after {
         content: "i";
@@ -199,19 +214,20 @@ h1, h2 {
         border: 1px solid #AFAFAF;
         border-radius: 50%;
         color: #AFAFAF;
-        width: 1em;
-        height: 1em;
+        width: 1.2em;
+        height: 1.2em;
         text-align: center;
-        vertical-align: baseline;
-        font-size: .5rem;
-        line-height: 1;
+        vertical-align: 1px;
+        font-size: .55rem;
+        line-height: 1.3;
         margin-left: .5em;
-        margin-right: 1em
+        margin-right: 1em;
+        cursor: help;
       }
       .typeofinv-legend {
         width: 50%;
         padding: .75rem;
         color: #AFAFAF;
         font-size: 1em;
-        box-shadow: 0 0 .2rem .3rem rgba(0, 0, 0, 0.05)
+        box-shadow: 0 0 .8rem 1px rgba(0, 0, 0, 0.03)
       }
