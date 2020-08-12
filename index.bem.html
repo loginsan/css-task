@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS-Task by Loginov Ilya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css-task-styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="create-account-box">
+      <a href="/" class="logo" tabindex="9">iintoo</a>
+      <form action="/" name="create-account" class="create-account">
+        <section class="user-reg">
+          <h1>Get iintoo it today</h1>
+          <p>There is no charge or obligation upon registration.</p>
+          <ul class="reg-with">
+            <li><a href="#" tabindex="1" class="reg-with-facebook">Register with Facebook</a></li>
+            <li class="right"><a href="#" tabindex="1" class="reg-with-linkedin">Register with LinkedIn</a></li>
+          </ul>
+          <div class="reg-or"><span>or</span></div>
+          <ul class="reg-user">
+            <li class="reg-user-email"><label for="email">Email</label><input type="text" id="email" tabindex="1" value="gus.googdwin@gmail.com"></input></li>
+            <li class="reg-user-phone right"><label for="phone">Phone</label><input type="text" id="phone" tabindex="1"></input></li>
+          </ul>
+        </section>
+
+        <section class="user-type">
+          <h2>What type of investor are you?</h2>
+          <p>Select the type of investor you are below.</p>
+          <fieldset class="typeofinv">
+            <label><input type="radio" name="typeofinv" value="Individual" tabindex="2">Individual</input></label>
+            <label><input type="radio" name="typeofinv" value="Business" tabindex="3">Business</input></label>
+            <label><input type="radio" name="typeofinv" value="IRA" tabindex="4">IRA</input></label>
+            <label><input type="radio" name="typeofinv" value="Trust" tabindex="5">Trust</input></label>
+            <p class="typeofinv-legend">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</p>
+          </fieldset>
+          <label for="agreement"><input type="checkbox" id="agreement" name="agreement" tabindex="6"> I agree to the terms and receiving notifications from iintoo <a href="#" tabindex="7">View full terms</a></label>
+        </section>
+
+        <button type="submit" id="create" title="Create Account" tabindex="8">Create Account</button>
+      </form>
+    </main>
+  </body>
+</html>

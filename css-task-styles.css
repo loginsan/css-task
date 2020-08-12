@@ -198,7 +198,7 @@ h1, h2 {
           width: .4rem;
           height: .4rem;
           border-radius: 50%;
-
+          transition: 0.3s ease-out;
         }
         .typeofinv input:focus::before, .typeofinv input:active::before, .typeofinv input:checked::before {
           border-color: #3698FB
